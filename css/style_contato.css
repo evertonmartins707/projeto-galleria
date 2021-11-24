@@ -1,0 +1,129 @@
+* {   /* Irá dar um 'RESET' em todo corpo da página e definir o fonte padrão */
+  font-family: "Josefin Sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  color: #20C997;
+}
+body a {
+  color: darkslategray;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body ul {
+  list-style: none;
+}
+/* Estilização do cabeçalho da página */
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+@media (max-width: 425px) {
+  .header {
+    padding: 1.1rem;
+  }
+}
+.header-brand {
+  color: #fff;
+  font-size: 3rem;
+}
+.header-brand:hover {
+  background-image: linear-gradient(to bottom, #20C997 0%, darkslategray 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #000;
+}
+/* Estilização da barra de navegação */
+.header-navbar ul { 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 425px) { 
+  .header-navbar ul {
+    display: block;
+    text-align: right;
+    width: 150%;
+  }
+}
+.header-navbar ul li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.header-navbar ul li .active {
+  color: #20C997;
+}
+.header-navbar ul li a:hover {
+  color: lime;
+}
+.header-social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+@media (max-width: 425px) {
+  .header-social-media ul {
+    display: none;
+  }
+}
+/* Estilização da barra de navegação social */
+.header-social-media ul li {
+  margin: 0 1rem;
+}
+.header-social-media ul li a:hover {
+  color: #fff;
+}
+/* Estilização da caixa de contatos */
+.id-pessoa {
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  width: 15%;
+}
+.id-pessoa:hover {
+  color: #fff;
+}
+.id-pessoa:hover hr {
+  border-color: #fff;
+}
+@media (max-width: 425px) {
+  .id-pessoa {
+    width: auto;
+    margin: 5%;
+  }
+}
+.id-pessoa figure img {
+  box-shadow: 0px 0px 10px lime;
+  border-radius: 100%;
+  margin: 10%;
+  width: 80%;
+}
+.id-pessoa figure figcaption {
+  font-size: 100%;
+  text-align: center;
+}
+.id-pessoa figure figcaption hr {
+  border-color: #20C997;
+}
+/* Estilização do rodapé da página */
+footer {
+  margin-top: 7.5rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer span {
+  font-weight: bold;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style_contato.css.map */

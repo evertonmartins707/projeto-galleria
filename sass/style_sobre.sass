@@ -1,0 +1,107 @@
+// Importação dos aquivos
+@use 'variables'
+@use 'mixins'
+
+* // Irá dar um 'RESET' em todo corpo da página e definir o fonte padrão 
+    font-family: 'Josefin Sans'
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+
+body
+    background-color: variables.$bg-color
+    color: variables.$secondary-color
+
+    a
+        color: variables.$text-color
+        text-decoration: none
+        transition: .4s
+
+    ul
+        list-style: none
+
+// Estilização do cabeçalho da página
+.header // Chama o elemento "header" pai
+    display: flex
+    justify-content: space-between
+    @include mixins.container
+
+    // Importa a função de verificação de aparelho mobile e define estilo caso resultado verdadeiro
+    @include mixins.mobile
+        padding: 1.1rem
+
+    &-brand // Chama o elemento "header-brand"
+        color: variables.$primary-color
+        font-size: 3rem
+
+        &:hover
+            background-image: linear-gradient(to bottom, variables.$secondary-color 0%, variables.$text-color 100%)
+            background-clip: text
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            color: black
+
+    &-navbar // Chama o elemento "header-navbar"
+
+        ul
+            height: 100%
+            // Importa a função para centralização definida no arquivo "_mixins.sass"
+            @include mixins.flex-center
+            @include mixins.mobile
+                display: block
+                width: 30%
+            
+            li
+                margin: 0 1rem
+                text-transform: uppercase
+                font-size: .8rem
+
+                .active // Chama o elemento "active"
+                    color: variables.$secondary-color
+                
+                a
+                    &:hover
+                        color: variables.$link-color
+
+    &-social-media // Chama o elemento "header-social-media"
+        
+        ul
+            @include mixins.flex-center
+            height: 100%
+
+            @include mixins.mobile
+                display: none
+
+            li
+                margin: 0 1rem
+
+                a 
+                    &:hover
+                        color: variables.$primary-color
+
+// Estilização do corpo da página
+h2
+    @include mixins.container
+    font-size: 2rem
+    text-align: center
+    color: variables.$secondary-color
+    border-radius: 5rem
+    box-shadow: 0 6px 4.5px variables.$secondary-color
+
+h3
+    @include mixins.container
+    margin: 1%
+    margin-top: 3%
+    margin-left: 15%
+    color: variables.$primary-color
+
+// Estilização do rodapé da página
+footer
+    margin-top: 7.5rem
+    text-align: center
+    padding-bottom: 2rem
+
+    span
+        font-weight: bold
+        color: variables.$primary-color

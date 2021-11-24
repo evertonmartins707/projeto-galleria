@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descrição do projeto -->
+    <meta name= "description" contente="A Galleria é um projeto de desenvolvimento para disponibilizar 
+    as pessoas algumas belas fotos das mais diversas categorias, esta página é apenas para testes de habilidades">
+
+    <!-- ícone do site -->
+    <link rel="shortcut icon" href="img/icone-galleria.ico" type="image/x-icon" />
+    
+    <title>Galleria</title>
+
+    <!--Importação das fontes que serão ultilizadas
+        Google Fonts; Importação da fonte 'Josefin Sans' para todo corpo da página -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200;1,300&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome; Importação da fonte de caracteres especiais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Estilos de aplicação; Iportação do arquivo de estilo da página -->
+    <link rel="stylesheet" href="css/style_pagina_inicial.css">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header class="header"> 
+        <a href="" class="header-brand">Galleria</a>
+        <!-- Barra de navegação -->
+        <nav class="header-navbar">
+            <ul>
+                <li>
+                    <a href="pagina_inicial.html" class="active" >Galeria</a>
+                </li>
+                <li>
+                    <a href="servicos.html" >Serviços</a>
+                </li>
+                <li>
+                    <a href="sobre.html" >Sobre</a>
+                </li>
+                <li>
+                    <a href="contato.html" >Contatos</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Caracteres especiais da barra de navegação -->
+        <div class="header-social-media">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li><li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li><li>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li><li>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Corpo da página
+    Cartões de cada página de fotos -->
+    <main>
+        <div class="gallery">
+            <div class="gallery-card" id="card-1"> <!-- Declaração do cartão e indentificação do nome-->
+                <h2 class="gallery-card-title">Animais</h2> <!-- Titulo do cartão -->
+                <a href="paginas_fotos/fotos_animais.html" class="gallery-card-btn">Mais fotos</a> <!-- Criação do botão para a página de fotos -->
+            </div>
+            <div class="gallery-card" id="card-2"> 
+                <h2 class="gallery-card-title">Jogos</h2>
+                <a href="paginas_fotos/fotos_jogos.html" class="gallery-card-btn">Mais fotos</a>
+            </div>
+            <div class="gallery-card" id="card-3">
+                <h2 class="gallery-card-title">Cidades</h2>
+                <a href="paginas_fotos/fotos_cidades.html" class="gallery-card-btn">Mais fotos</a>
+            </div>
+            <div class="gallery-card" id="card-4">
+                <h2 class="gallery-card-title">Mobílias</h2>
+                <a href="paginas_fotos/fotos_mobilias.html" class="gallery-card-btn">Mais fotos</a>
+            </div>
+            <div class="gallery-card" id="card-5">
+                <h2 class="gallery-card-title">Carros</h2>
+                <a href="paginas_fotos/fotos_carros.html" class="gallery-card-btn">Mais fotos</a>
+            </div>
+            <div class="gallery-card" id="card-6">
+                <h2 class="gallery-card-title">Motos</h2>
+                <a href="paginas_fotos/fotos_motos.html" class="gallery-card-btn">Mais fotos</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Finalização da página -->
+    <footer>
+        <p><span>Galleria</span> &copy; 2021</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+* { /* Irá dar um 'RESET' em todo corpo da página e definir o fonte padrão */
+  font-family: "Josefin Sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #20C997;
+}
+body a {
+  color: darkslategray;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body ul {
+  list-style: none;
+}
+
+/* Estilização do cabeçalho da página */
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+@media (max-width: 425px) {
+  .header {
+    padding: 1.1rem;
+  }
+}
+.header-brand {
+  color: #fff;
+  font-size: 3rem;
+}
+.header-brand:hover {
+  background-image: linear-gradient(to bottom, #20C997 0%, darkslategray 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+/* Estilização da barra de navegação */
+.header-navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+  .header-navbar ul {
+    display: block;
+    width: 30%;
+  }
+}
+.header-navbar ul li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.header-navbar ul li .active {
+  color: #20C997;
+}
+.header-navbar ul li a:hover {
+  color: lime;
+}
+/* Estilizaçaõ da barra de navegação social */
+.header-social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+@media (max-width: 425px) {
+  .header-social-media ul {
+    display: none;
+  }
+}
+.header-social-media ul li {
+  margin: 0 1rem;
+}
+.header-social-media ul li a:hover {
+  color: #fff;
+}
+/* Estilização do corpo da página, Subtítulo e texto */
+h2 {
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  font-size: 2rem;
+  text-align: center;
+  color: #20C997;
+  border-radius: 5rem;
+  box-shadow: 0 6px 4.5px #20C997;
+}
+
+h3 {
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  margin: 1%;
+  margin-top: 3%;
+  margin-left: 15%;
+  color: #fff;
+}
+
+/* Estilização do rodapé da página */
+footer {
+  margin-top: 7.5rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer span {
+  font-weight: bold;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style_sobre.css.map */

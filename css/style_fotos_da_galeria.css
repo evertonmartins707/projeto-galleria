@@ -1,0 +1,108 @@
+* { /* Irá dar um 'RESET' em todo corpo da página e definir o fonte padrão */
+  font-family: "Josefin Sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #20C997;
+}
+
+/* Estilização do cabeçalho da página */
+.header {
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-brand {
+  height: 100%;
+  font-size: 4rem;
+  color: #fff;
+  margin-right: 30%;
+}
+.header-brand:hover {
+  background-image: linear-gradient(to bottom, #20C997 0%, darkslategray 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+  transition: 0.4s;
+}
+@media (max-width: 425px) {
+  .header-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: auto;
+    width: 70%;
+    height: auto;
+  }
+}
+.header-bnt-back {
+  height: 100%;
+  font-size: 2rem;
+  color: darkslategray;
+}
+.header-bnt-back:hover {
+  color: #20C997;
+}
+@media (max-width: 425px) {
+  .header-bnt-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin: auto;
+    width: auto;
+  }
+}
+.header a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+/* Estilização de cada bloco de imagem */
+.gallery {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 425px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+.gallery-card {
+  margin: 1rem;
+  width: 30%;
+  margin-bottom: 3.5rem;
+}
+@media (max-width: 425px) {
+  .gallery-card {
+    width: 90%;
+    margin-bottom: 6%;
+  }
+}
+.gallery-card img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/* Estilização do rodapé da página */
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer span {
+  font-weight: bold;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style_fotos_da_galeria.css.map */

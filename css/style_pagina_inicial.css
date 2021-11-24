@@ -1,0 +1,229 @@
+* { /* Irá dar um 'RESET' em todo corpo da página e definir o fonte padrão */
+  font-family: "Josefin Sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #20C997;
+}
+body a {
+  color: darkslategray;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body ul {
+  list-style: none;
+}
+
+/* Estilização do cabeçalho da página */
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+@media (max-width: 425px) {
+  .header {
+    padding: 1.1rem;
+  }
+}
+.header-brand {
+  color: #fff;
+  font-size: 3rem;
+}
+.header-brand:hover {
+  background-image: linear-gradient(to bottom, #20C997 0%, darkslategray 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+/* Estilização da barra de navegação */
+.header-navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+  .header-navbar ul {
+    display: block;
+    width: 30%;
+  }
+}
+.header-navbar ul li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.header-navbar ul li .active {
+  color: #20C997;
+}
+.header-navbar ul li a:hover {
+  color: lime;
+}
+/* Estilizaçaõ da barra de navegação social */
+.header-social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+@media (max-width: 425px) {
+  .header-social-media ul {
+    display: none;
+  }
+}
+.header-social-media ul li {
+  margin: 0 1rem;
+}
+.header-social-media ul li a:hover {
+  color: #fff;
+}
+
+/* Estilização de cada bloco de categoria  */
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+@media (max-width: 425px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+.gallery-card {
+  width: 31%;
+  height: 450px;
+  margin-bottom: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+@media (max-width: 425px) {
+  .gallery-card {
+    width: 90%;
+    margin-bottom: 6%;
+  }
+}
+.gallery-card-title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.gallery-card-btn {
+  padding: 0.6rem 2rem;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.gallery-card-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* Estilição das imagens de fundo de cada bloco */
+.gallery #card-1 {
+  background-image: url("../img/animais.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-1:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/animais.jpeg");
+}
+.gallery #card-2 {
+  background-image: url("../img/jogos.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-2:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/jogos.jpeg");
+}
+.gallery #card-3 {
+  background-image: url("../img/cidades.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-3:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cidades.jpeg");
+}
+.gallery #card-4 {
+  background-image: url("../img/mobilia.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-4:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mobilia.jpeg");
+}
+.gallery #card-5 {
+  background-image: url("../img/carros.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-5:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carros.jpeg");
+}
+.gallery #card-6 {
+  background-image: url("../img/motos.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-6:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/motos.jpeg");
+}
+
+/* Estilização do rodapé da página */
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer span {
+  font-weight: bold;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style_pagina_inicial.css.map */
