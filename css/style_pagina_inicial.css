@@ -168,7 +168,7 @@ body ul {
     
   ul {
     position: absolute;
-    top: 10%;
+    top: 10px;
     right: 30px;
     transform: translate(-50%, -50%);
     list-style: none;
