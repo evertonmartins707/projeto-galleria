@@ -82,6 +82,10 @@ body ul {
   color: #fff;
 }
 
+#menu-hamburguer {
+  display: none;
+}
+
 @media (max-width: 425px) {
   .header-navbar ul {
     height: unset;
@@ -168,8 +172,6 @@ body ul {
   input:checked ~ label .menu {
     opacity: 0.8;
     background-color: white;
-    transition: 5s;
-    transition: opacity 10s cubic-bezier(0.19, 1, 0.22, 1);
     border-radius: 0 0 0 10%;
     box-shadow: -2rem 0 0 6rem white;
     transition: box-shadow 5s cubic-bezier(0.19, 1, 0.22, 1);
