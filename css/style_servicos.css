@@ -209,26 +209,27 @@ body ul {
 }
 form {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  display: inline-block;
-  margin: 3rem;
-}
-form .formulario {
-  display: inline-flex;
-  margin: 1%;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 @media (max-width: 425px) {
-  form .formulario {
-    display: inline-block;
-    margin-bottom: 1rem;
+  form {
+    flex-direction: column;
+    margin: 0.5rem;
   }
 }
-form .formulario label {
+form .formulario {
+  display: flex;
+  margin: 10px;
+}
+form .formulario-label {
+  width: 100px;
+  height: 2rem;
   border-bottom: 1px solid;
-  width: 15rem;
 }
 form .formulario input {
+  display: block;
   width: 20rem;
   height: 2rem;
 }
@@ -239,9 +240,20 @@ form .formulario textarea {
 form .formulario button {
   width: 20rem;
   height: 2rem;
+  margin-left: 100px;
   font-size: 1rem;
   font-weight: bold;
   color: darkslategray;
+}
+@media (max-width: 425px) {
+  form .formulario {
+    display: block;
+  }
+  form .formulario label, form .formulario input, form .formulario textarea, form .formulario button {
+    border: 0;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 h3 {

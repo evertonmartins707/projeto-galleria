@@ -193,37 +193,46 @@ body
 
 // Estilização do formulário
 form
-    @include mixins.flex-center
-    display: inline-block
-    margin: 3rem
+    display: flex
+    justify-content: space-around
+    flex-direction: row
+    flex-wrap: wrap
     
-    .formulario
-        @include mixins.mobile
-            display: inline-block
-            margin-bottom: 1rem
-            
-        display: inline-flex
-        margin: 1%
-        
-        label
-            border-bottom: 1px solid
-            width: 15rem            
+    @include mixins.mobile
+        flex-direction: column
+        margin: 0.5rem
 
+    .formulario
+        display: flex
+        margin: 10px
+
+        &-label
+            width: 100px
+            height: 2rem
+            border-bottom: 1px solid
         input
+            display: block
             width: 20rem
             height: 2rem
 
         textarea
             width: 20rem
             height: 7rem
-        
+
         button
             width: 20rem
             height: 2rem
+            margin-left: 100px
             font-size: 1rem
             font-weight: bold
             color: variables.$text-color
-
+            
+        @include mixins.mobile
+            display: block
+            label, input, textarea, button
+              border: 0
+              width: 100%
+              margin: 0
 h3
     @include mixins.container
     text-align: center
