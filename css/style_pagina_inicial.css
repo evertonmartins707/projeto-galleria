@@ -188,7 +188,7 @@ body ul {
     display: none;
     position: absolute;
     top: 70px;
-    right: 10px;
+    right: 20px;
     transform: translate(-50%, -50%);
     list-style: none;
     font-size: 45px;
@@ -266,6 +266,7 @@ body ul {
 @media (max-width: 425px) {
   .gallery #card-1 {
     filter: none;
+    background-size: 100%;
   }
 }
 .gallery #card-1:hover {
@@ -284,6 +285,7 @@ body ul {
 @media (max-width: 425px) {
   .gallery #card-2 {
     filter: none;
+    background-size: 100%;
   }
 }
 .gallery #card-2:hover {
@@ -302,6 +304,7 @@ body ul {
 @media (max-width: 425px) {
   .gallery #card-3 {
     filter: none;
+    background-size: 100%;
   }
 }
 .gallery #card-3:hover {
@@ -320,6 +323,7 @@ body ul {
 @media (max-width: 425px) {
   .gallery #card-4 {
     filter: none;
+    background-size: 100%;
   }
 }
 .gallery #card-4:hover {
@@ -338,6 +342,7 @@ body ul {
 @media (max-width: 425px) {
   .gallery #card-5 {
     filter: none;
+    background-size: 100%;
   }
 }
 .gallery #card-5:hover {
@@ -356,6 +361,7 @@ body ul {
 @media (max-width: 425px) {
   .gallery #card-6 {
     filter: none;
+    background-size: 100%;
   }
 }
 .gallery #card-6:hover {
