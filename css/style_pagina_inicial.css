@@ -269,6 +269,11 @@ body ul {
   filter: grayscale(100%);
   transition: 0.6s;
 }
+@media (max-width: 425px) {
+  .gallery #card-1 {
+    filter: none;
+  }
+}
 .gallery #card-1:hover {
   background-size: 110%;
   filter: grayscale(0%);
@@ -281,6 +286,11 @@ body ul {
   background-repeat: no-repeat;
   filter: grayscale(100%);
   transition: 0.6s;
+}
+@media (max-width: 425px) {
+  .gallery #card-2 {
+    filter: none;
+  }
 }
 .gallery #card-2:hover {
   background-size: 110%;
@@ -295,6 +305,11 @@ body ul {
   filter: grayscale(100%);
   transition: 0.6s;
 }
+@media (max-width: 425px) {
+  .gallery #card-3 {
+    filter: none;
+  }
+}
 .gallery #card-3:hover {
   background-size: 110%;
   filter: grayscale(0%);
@@ -307,6 +322,11 @@ body ul {
   background-repeat: no-repeat;
   filter: grayscale(100%);
   transition: 0.6s;
+}
+@media (max-width: 425px) {
+  .gallery #card-4 {
+    filter: none;
+  }
 }
 .gallery #card-4:hover {
   background-size: 110%;
@@ -321,6 +341,11 @@ body ul {
   filter: grayscale(100%);
   transition: 0.6s;
 }
+@media (max-width: 425px) {
+  .gallery #card-5 {
+    filter: none;
+  }
+}
 .gallery #card-5:hover {
   background-size: 110%;
   filter: grayscale(0%);
@@ -333,6 +358,11 @@ body ul {
   background-repeat: no-repeat;
   filter: grayscale(100%);
   transition: 0.6s;
+}
+@media (max-width: 425px) {
+  .gallery #card-6 {
+    filter: none;
+  }
 }
 .gallery #card-6:hover {
   background-size: 110%;
