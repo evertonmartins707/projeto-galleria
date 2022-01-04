@@ -50,8 +50,7 @@ body ul {
 @media (max-width: 425px) {
   .header-navbar ul {
     display: block;
-    text-align: right;
-    width: 150%;
+    width: 30%;
   }
 }
 .header-navbar ul li {
@@ -191,7 +190,7 @@ body ul {
     display: none;
     position: absolute;
     top: 70px;
-    left: 20px;
+    right: 20px;
     transform: translate(-50%, -50%);
     list-style: none;
     font-size: 45px;
