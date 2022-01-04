@@ -197,16 +197,17 @@ h2
     font-size: 2rem
     text-align: center
     color: variables.$secondary-color
-    border-radius: 5rem
-    box-shadow: 0 6px 4.5px variables.$secondary-color
+    border-radius: 4rem
 
 h3
     @include mixins.container
-    margin: 1%
-    margin-top: 3%
-    margin-left: 15%
+    width: 100%
+    margin-top: 1em
     color: variables.$primary-color
 
+    &::first-letter
+      margin-left: 30px
+      font-size: 25pt
 // Estilização do rodapé da página
 footer
     margin-top: 7.5rem
