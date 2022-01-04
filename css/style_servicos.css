@@ -212,6 +212,7 @@ form {
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 3rem;
 }
 @media (max-width: 425px) {
   form {
