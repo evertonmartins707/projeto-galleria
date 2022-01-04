@@ -83,6 +83,10 @@ body ul {
   color: #fff;
 }
 
+#menu-hamburguer {
+  display: none;
+}
+
 @media (max-width: 425px) {
   .header-navbar ul {
     height: unset;
@@ -100,22 +104,12 @@ body ul {
     text-transform: unset;
   }
 
-  .header-navbar ul li a:hover {
-    color: lime;
-  }
-
-  ul li {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
   .menu {
     background-color: #000;
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    position: fixed;
+    position: absolute;
     top: 10px;
     right: 10px;
   }
@@ -156,16 +150,19 @@ body ul {
 
   input:checked ~ label .hamburguer {
     transform: rotate(45deg);
+    background: black;
   }
 
   input:checked ~ label .hamburguer:before {
     transform: rotate(90deg);
     top: 0;
+    background: black;
   }
 
   input:checked ~ label .hamburguer:after {
     transform: rotate(90deg);
     bottom: 0;
+    background: black;
   }
 
   .menu {
@@ -174,17 +171,16 @@ body ul {
   }
 
   input:checked ~ label .menu {
-    opacity: 0.1;
-    transition: opacity 10s cubic-bezier(0.19, 1, 0.22, 1);
-    border-radius: 10% 0 0 10%;
-    background-color: blue;
-    box-shadow: -2rem 0 0 3rem blue;
+    opacity: 0.8;
+    background-color: white;
+    border-radius: 0 0 0 10%;
+    box-shadow: -2rem 0 0 6rem white;
     transition: box-shadow 5s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
   input:checked ~ ul {
-    opacity: 1;
-    transition: opacity 10s cubic-bezier(0.19, 1, 0.22, 1);
+    display: block;
+    transition: 10s;
   }
 
   input:checked ~ ul a {
@@ -192,23 +188,23 @@ body ul {
   }
 
   ul {
+    display: none;
     position: absolute;
-    top: 50px;
-    right: 30px;
+    top: 70px;
+    left: 20px;
     transform: translate(-50%, -50%);
     list-style: none;
     font-size: 45px;
-    opacity: 0;
     transition: 2s 0.1s cubic-bezier(0, 1.07, 0, 1.02);
     z-index: 9;
   }
 
   .link-navbar {
-    color: whitesmoke;
-    text-align: right;
-    font-size: 20px;
     display: none;
-    margin-bottom: 1%;
+    color: black;
+    margin-left: 40%;
+    text-align: right;
+    font-size: 18pt;
     text-decoration: none;
   }
 }
