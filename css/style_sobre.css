@@ -229,6 +229,11 @@ h3::first-letter {
   margin-left: 30px;
   font-size: 25pt;
 }
+@media (max-width: 425px) {
+  h3 {
+    width: 90%;
+  }
+}
 
 footer {
   margin-top: 7.5rem;
