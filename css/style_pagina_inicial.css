@@ -171,7 +171,7 @@ body ul {
     transition: 5s;
     transition: opacity 10s cubic-bezier(0.19, 1, 0.22, 1);
     border-radius: 0 0 0 10%;
-    box-shadow: -2rem 0 0 3rem white;
+    box-shadow: -2rem 0 0 6rem white;
     transition: box-shadow 5s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
@@ -187,7 +187,7 @@ body ul {
   ul {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 70px;
     right: 10px;
     transform: translate(-50%, -50%);
     list-style: none;
@@ -201,7 +201,7 @@ body ul {
     color: black;
     margin-left: 40%;
     text-align: right;
-    font-size: 20px;
+    font-size: 18pt;
     text-decoration: none;
   }
 }
