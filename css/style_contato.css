@@ -191,7 +191,7 @@ body ul {
     display: none;
     position: absolute;
     top: 70px;
-    right: 20px;
+    left: 20px;
     transform: translate(-50%, -50%);
     list-style: none;
     font-size: 45px;
